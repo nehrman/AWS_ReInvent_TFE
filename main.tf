@@ -98,7 +98,7 @@ resource "tfe_team_access" "dev_base" {
 }
 
 resource "tfe_team_access" "dev_instance" {
-  access       = "write"
+  access       = "plan"
   team_id      = tfe_team.dev.id
   workspace_id = tfe_workspace.instance.id
 }
