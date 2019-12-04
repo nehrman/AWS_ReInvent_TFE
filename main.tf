@@ -50,7 +50,7 @@ resource "tfe_notification_configuration" "instance" {
   name = "AWS Re:Invent Notification"
   enabled = true
   destination_type = "slack"
-  url = "https://hooks.slack.com/services/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"
+  url = var.slack_notification_url
   workspace_external_id = tfe_workspace.instance.external_id
   triggers = ["run:needs_attention","run:completed","run:errored"]
 }
