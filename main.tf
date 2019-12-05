@@ -79,7 +79,7 @@ resource "tfe_team_access" "ops_instance" {
   workspace_id = tfe_workspace.instance.id
 }
 
-### Configure Developers Teams, Members and Permissions ###
+### Configure Developers Teams, Members and Permissions  ###
 
 resource "tfe_team" "dev" {
   name         = "developers-team"
