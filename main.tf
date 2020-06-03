@@ -88,7 +88,7 @@ resource "tfe_team" "dev" {
 
 resource "tfe_team_members" "dev" {
   team_id  = tfe_team.dev.id
-  usernames = ["nehdev"]
+  usernames = ["nehdev","brumedev","rcassidy-demo-dev"]
 }
 
 resource "tfe_team_access" "dev_base" {
